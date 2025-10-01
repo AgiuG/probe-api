@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "api-sondas"
+version = "0.1.0"
+description = ""
+authors = ["Guilherme Silva <guilhermeduarte19@gmail.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.12.7,<4.0"
+fastapi = ">=0.118.0,<0.119.0"
+uvicorn = ">=0.37.0,<0.38.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
