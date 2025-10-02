@@ -5,6 +5,13 @@ class CreateEnvironmentRequest(BaseModel):
   y: int = Field(examples=[5])
   direction: str = Field(examples=["NORTH"])
   
+  @field_validator("x", "y")
+  @classmethod
+  def validate_coordinates(cls, value):
+    if value < 0:
+      raise ValueError("Coordenadas devem ser maiores ou iguais a zero")
+    return value
+  
   @field_validator("direction")
   @classmethod
   def validate_direction(cls, value):
