@@ -39,7 +39,7 @@ A API Sondas é uma aplicação REST desenvolvida para controlar o movimento de 
 | Docker | 20.10.0 | Para execução containerizada |
 | Docker Compose | 2.0.0 | Orquestração de containers |
 
-### Stack Tecnológico
+### Stack
 
 ```
 FastAPI 0.104+      # Framework web assíncrono
